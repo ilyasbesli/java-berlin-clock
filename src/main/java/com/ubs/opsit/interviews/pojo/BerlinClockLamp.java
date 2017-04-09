@@ -1,5 +1,12 @@
 package com.ubs.opsit.interviews.pojo;
 
+/**
+ * This class consists Berlin Clock Lamp row values.
+ * It hold every rows at separate variables
+ * 
+ * @author ibesli
+ *
+ */
 public class BerlinClockLamp {
 
 	private String topSecond;
@@ -48,6 +55,9 @@ public class BerlinClockLamp {
 		this.bottomMinutes = bottomMinutes;
 	}
 
+	/**
+	 * This method produce Berlin Clock formatted data.
+	 */
 	@Override
 	public String toString() {
 		return new StringBuilder()

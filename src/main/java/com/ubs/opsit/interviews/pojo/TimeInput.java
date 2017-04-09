@@ -2,12 +2,25 @@ package com.ubs.opsit.interviews.pojo;
 
 import java.util.stream.Stream;
 
+/**
+ * This class contains parts of time input parameter.
+ * It hold {@code hours, minutes and seconds} separately.
+ * 
+ * @author ibesli
+ *
+ */
 public class TimeInput {
 
 	private Integer hours;
 	private Integer minutes;
 	private Integer seconds;
 
+	/**
+	 * It takes {@code time} input parameter.
+	 * This method splits parameter and sets {@code hours, minutes and seconds}
+	 * 
+	 * @param time
+	 */
 	public TimeInput(String time) {
 		int[] timeSplitArr = Stream.of(time.split(":")).mapToInt(Integer::parseInt).toArray();
 		hours = Integer.valueOf(timeSplitArr[0]);

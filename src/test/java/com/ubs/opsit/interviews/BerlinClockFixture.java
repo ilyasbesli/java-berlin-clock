@@ -27,6 +27,10 @@ public class BerlinClockFixture {
 				.run();
 	}
 
+	/**
+	 * There is a missing keyword according to Gherkin language specification.
+	 * {@code Given} annotation added to fulfill missing requirement.
+	 */
 	@Given("berlin clock")
 	public void givenBerlinClock() {
 		berlinClock = new BerlinClockTimeConverter();
