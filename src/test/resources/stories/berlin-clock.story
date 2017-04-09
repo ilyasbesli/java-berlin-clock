@@ -9,6 +9,7 @@ Narrative:
     So that I can increase then number of ways that I can read the time
 
 Scenario: Midnight
+Given berlin clock
 When the time is 00:00:00
 Then the clock should look like
 Y
@@ -18,6 +19,7 @@ OOOOOOOOOOO
 OOOO
 
 Scenario: Middle of the afternoon
+Given berlin clock
 When the time is 13:17:01
 Then the clock should look like
 O
